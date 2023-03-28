@@ -19,7 +19,6 @@ func TestClient(t *testing.T) {
 	}
 
 	ch := make(chan BestOrderBook)
-
 	client.ReadMessagesFromChannel(ch)
 
 	select {
